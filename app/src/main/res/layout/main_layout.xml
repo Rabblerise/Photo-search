@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <com.google.android.gms.common.SignInButton
+                android:id="@+id/sign_in_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <ImageButton
+                android:src="@android:drawable/star_big_on"
+                android:layout_width="192dp"
+                android:layout_height="wrap_content" android:id="@+id/toList" android:layout_weight="1"
+                android:contentDescription="@string/toList"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+                android:id="@+id/SearchText"
+                android:layout_width="361dp"
+                android:layout_height="57dp"
+                android:ems="10"
+                android:inputType="text"
+                android:text="@string/app_name"/>
+        <ImageButton
+                android:src="@android:drawable/ic_menu_search"
+                android:layout_width="101dp"
+                android:layout_height="wrap_content" android:id="@+id/Search" android:layout_weight="1"
+                android:contentDescription="@string/like"/>
+    </LinearLayout>
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="549dp" tools:src="@tools:sample/backgrounds/scenic"
+            android:id="@+id/GoogleImage"
+            android:clickable="true"
+            android:focusable="true" android:contentDescription="@string/googleImage"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+        <ImageButton
+                android:src="@android:drawable/checkbox_on_background"
+                android:layout_width="211dp"
+                android:layout_height="69dp" android:id="@+id/Like" android:contentDescription="@string/dislike"/>
+        <ImageButton
+                android:src="@android:drawable/checkbox_off_background"
+                android:layout_width="202dp"
+                android:layout_height="70dp" android:id="@+id/dislike" android:contentDescription="@string/app_name"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    </LinearLayout>
+
+</LinearLayout>
